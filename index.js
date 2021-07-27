@@ -10,9 +10,9 @@ app.get('/page1', pages.page1)
 app.get('/calc/:num1/:num2', pages.calc)
 
 app.listen(port, (err) => {
-  if(err){
+  if (err) {
     console.log(err)
-  }else{
+  } else {
     console.log('CI-CD Test Project - Running...')
   }
 })
