@@ -18,7 +18,7 @@ jobs:
           command: |
             cd ci-cd-projeto-teste
             git pull
-            npm install
+            npm ci
             pm2 reload index.js
           host: ${{ secrets.SSH_HOST }}
           username: root
