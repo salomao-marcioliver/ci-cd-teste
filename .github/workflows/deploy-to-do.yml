@@ -13,8 +13,9 @@ jobs:
         uses: garygrossgarten/github-action-ssh@release
         with:
           command: |
-            cd /tmp
-            ls -a
+            cd ci-cd-projeto-teste
+            git pull
+            pm2 reload index.js
           host: ${{ secrets.SSH_HOST }}
           username: root
           password: ${{ secrets.SSH_PASSWD}}
