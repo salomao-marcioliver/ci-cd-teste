@@ -17,4 +17,4 @@ jobs:
             ls -a
           host: ${{ secrets.SSH_HOST }}
           username: root
-          passphrase: ${{ secrets.SSH_PASSWD}}
+          password: ${{ secrets.SSH_PASSWD}}
